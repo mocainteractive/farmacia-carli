@@ -1,0 +1,444 @@
+
+<div style="font-family:'Figtree',system-ui,sans-serif;font-size:12px;color:var(--color-text-primary);background:var(--color-background-tertiary);min-height:600px">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- HEADER -->
+<div style="background:#191919;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid #E52217;position:sticky;top:0;z-index:50">
+  <div style="display:flex;align-items:center;gap:16px">
+    <img src="https://mocainteractive.com/assets/svg/logo-light.svg" style="height:22px" alt="MOCA">
+    <div style="width:1px;height:28px;background:#333"></div>
+    <div>
+      <div style="font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.1em">Farmacia Carli · Recap Organico</div>
+      <div style="font-size:15px;font-weight:700;color:#fff;margin-top:1px">SEO Performance Review</div>
+    </div>
+  </div>
+  <div style="text-align:right;font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.08em">
+    <div>Periodo: <span style="color:#FF5147;font-weight:600">Mar – Giu 2026</span></div>
+    <div style="margin-top:2px">Fonte: GSC · Ahrefs</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div style="background:#fff;border-bottom:1px solid #E5E5E5;display:flex;overflow-x:auto" id="nav">
+  <div class="nav-btn active" onclick="switchTab('overview',this)" style="padding:12px 18px;font-size:10px;font-weight:600;color:#E52217;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;border-bottom:2px solid #E52217;white-space:nowrap">Panoramica</div>
+  <div class="nav-btn" onclick="switchTab('brand',this)" style="padding:12px 18px;font-size:10px;font-weight:600;color:#595959;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap">Brand vs No-Brand</div>
+  <div class="nav-btn" onclick="switchTab('pages',this)" style="padding:12px 18px;font-size:10px;font-weight:600;color:#595959;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap">Pagine</div>
+  <div class="nav-btn" onclick="switchTab('queries',this)" style="padding:12px 18px;font-size:10px;font-weight:600;color:#595959;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap">Query</div>
+  <div class="nav-btn" onclick="switchTab('ahrefs',this)" style="padding:12px 18px;font-size:10px;font-weight:600;color:#595959;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap">Ahrefs</div>
+  <div class="nav-btn" onclick="switchTab('agenda',this)" style="padding:12px 18px;font-size:10px;font-weight:600;color:#595959;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap">Punto situazione</div>
+</div>
+
+<div style="padding:24px 32px;max-width:1200px;margin:0 auto">
+
+<!-- ============ PANORAMICA ============ -->
+<div id="tab-overview">
+  <div style="margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #E5E5E5;display:flex;align-items:flex-end;justify-content:space-between">
+    <div><div style="font-size:18px;font-weight:800;text-transform:uppercase">Panoramica <span style="color:#E52217">Traffico Organico</span></div><div style="font-size:11px;color:#595959;margin-top:3px">Mar 4 – Giu 3, 2026 · pagina Ozempic esclusa · fonte GSC</div></div>
+    <span style="background:#DB5E29;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase">Senza Ozempic</span>
+  </div>
+  <div style="background:#FFFBEB;border:1px solid #F59E0B;border-left:4px solid #F59E0B;border-radius:6px;padding:12px 16px;margin-bottom:20px;font-size:11px;color:#92400E;line-height:1.6">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#B45309;margin-bottom:4px">Nota metodologica</div>
+    L'articolo <strong>«Ozempic e Wegovy»</strong> è escluso perché outlier. I suoi dati aggregati sono nella sezione Punto della Situazione.
+  </div>
+
+  <!-- KPI -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px">
+    <div style="background:#fff;border-radius:8px;padding:16px;border:1px solid #E5E5E5;border-top:3px solid #E52217">
+      <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#595959;margin-bottom:6px">Clic totali (3M)</div>
+      <div style="font-size:26px;font-weight:800;color:#191919;line-height:1">77.699</div>
+      <div style="font-size:11px;color:#595959;margin-top:4px">Mar–Giu 2026 · senza Ozempic</div>
+      <div style="font-size:11px;font-weight:600;color:#118541;margin-top:3px">↑ Crescita costante m/m</div>
+    </div>
+    <div style="background:#fff;border-radius:8px;padding:16px;border:1px solid #E5E5E5;border-top:3px solid #5781FF">
+      <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#595959;margin-bottom:6px">Impressioni totali</div>
+      <div style="font-size:26px;font-weight:800;color:#191919;line-height:1">8,29M</div>
+      <div style="font-size:11px;color:#595959;margin-top:4px">Visibilità complessiva</div>
+      <div style="font-size:11px;font-weight:600;color:#118541;margin-top:3px">↑ Apr +10,7% vs Mar</div>
+    </div>
+    <div style="background:#fff;border-radius:8px;padding:16px;border:1px solid #E5E5E5;border-top:3px solid #118541">
+      <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#595959;margin-bottom:6px">CTR medio periodo</div>
+      <div style="font-size:26px;font-weight:800;color:#191919;line-height:1">0,94%</div>
+      <div style="font-size:11px;color:#595959;margin-top:4px">Media ponderata 92 giorni</div>
+      <div style="font-size:11px;font-weight:600;color:#118541;margin-top:3px">↑ 0,74% → 1,17% in 2 mesi</div>
+    </div>
+    <div style="background:#fff;border-radius:8px;padding:16px;border:1px solid #E5E5E5;border-top:3px solid #DB5E29">
+      <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#595959;margin-bottom:6px">Posizione media</div>
+      <div style="font-size:26px;font-weight:800;color:#191919;line-height:1">~5,5</div>
+      <div style="font-size:11px;color:#595959;margin-top:4px">Range: 4,0 (mar) → 6,8 (mag)</div>
+      <div style="font-size:11px;font-weight:600;color:#E52217;margin-top:3px">↓ Peggioramento progressivo</div>
+    </div>
+  </div>
+
+  <!-- CONFRONTO MENSILE CLIC -->
+  <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px;margin-bottom:16px">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">Confronto mensile · Clic organici</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+      <div style="background:#F4F5F6;border-radius:6px;padding:12px">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#595959">Marzo 2026</div>
+        <div style="font-size:22px;font-weight:800;color:#191919;margin-top:4px">18.653</div>
+        <div style="font-size:11px;color:#595959;margin-top:2px">– baseline</div>
+        <div style="font-size:10px;color:#595959;margin-top:3px">Media: 666 clic/giorno</div>
+      </div>
+      <div style="background:#F4F5F6;border-radius:6px;padding:12px">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#595959">Aprile 2026</div>
+        <div style="font-size:22px;font-weight:800;color:#191919;margin-top:4px">24.701</div>
+        <div style="font-size:11px;color:#118541;font-weight:700;margin-top:2px">↑ +32,4% vs marzo</div>
+        <div style="font-size:10px;color:#595959;margin-top:3px">Media: 823 clic/giorno</div>
+      </div>
+      <div style="background:#F4F5F6;border-radius:6px;padding:12px">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#595959">Maggio 2026</div>
+        <div style="font-size:22px;font-weight:800;color:#191919;margin-top:4px">31.668</div>
+        <div style="font-size:11px;color:#118541;font-weight:700;margin-top:2px">↑ +28,2% vs aprile</div>
+        <div style="font-size:10px;color:#595959;margin-top:3px">Media: 1.021 clic/giorno</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTR e POSIZIONE -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">CTR mensile</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+        <div style="background:#F4F5F6;border-radius:6px;padding:10px;text-align:center"><div style="font-size:10px;font-weight:700;color:#595959;text-transform:uppercase">Marzo</div><div style="font-size:20px;font-weight:800;margin-top:3px">0,74%</div><div style="font-size:10px;color:#595959">–</div></div>
+        <div style="background:#F4F5F6;border-radius:6px;padding:10px;text-align:center"><div style="font-size:10px;font-weight:700;color:#595959;text-transform:uppercase">Aprile</div><div style="font-size:20px;font-weight:800;margin-top:3px">0,90%</div><div style="font-size:10px;color:#118541;font-weight:700">↑ +20,6%</div></div>
+        <div style="background:#F4F5F6;border-radius:6px;padding:10px;text-align:center"><div style="font-size:10px;font-weight:700;color:#595959;text-transform:uppercase">Maggio</div><div style="font-size:20px;font-weight:800;margin-top:3px">1,17%</div><div style="font-size:10px;color:#118541;font-weight:700">↑ +30,9%</div></div>
+      </div>
+    </div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px">Posizione media mensile</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+        <div style="background:#F4F5F6;border-radius:6px;padding:10px;text-align:center"><div style="font-size:10px;font-weight:700;color:#595959;text-transform:uppercase">Marzo</div><div style="font-size:20px;font-weight:800;margin-top:3px">4,0</div><div style="font-size:10px;color:#595959">–</div></div>
+        <div style="background:#F4F5F6;border-radius:6px;padding:10px;text-align:center"><div style="font-size:10px;font-weight:700;color:#595959;text-transform:uppercase">Aprile</div><div style="font-size:20px;font-weight:800;margin-top:3px">5,3</div><div style="font-size:10px;color:#E52217;font-weight:700">↓ –31,4%</div></div>
+        <div style="background:#F4F5F6;border-radius:6px;padding:10px;text-align:center"><div style="font-size:10px;font-weight:700;color:#595959;text-transform:uppercase">Maggio</div><div style="font-size:20px;font-weight:800;margin-top:3px">6,8</div><div style="font-size:10px;color:#E52217;font-weight:700">↓ –28,6%</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRAFICI -->
+  <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px;margin-bottom:12px">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px">Andamento giornaliero · Clic organici</div>
+    <div style="font-size:11px;color:#595959;margin-bottom:12px">Rosso = marzo · Blu = aprile · Verde = maggio</div>
+    <div style="position:relative;height:240px"><canvas id="chartClics" role="img" aria-label="Clic giornalieri organici marzo-giugno 2026"></canvas></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px">CTR giornaliero</div>
+      <div style="font-size:11px;color:#595959;margin-bottom:12px">Percentuale clic / impressioni</div>
+      <div style="position:relative;height:180px"><canvas id="chartCtr" role="img" aria-label="CTR giornaliero"></canvas></div>
+    </div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px">Posizione media giornaliera</div>
+      <div style="font-size:11px;color:#595959;margin-bottom:12px">Asse invertito: 1 in cima</div>
+      <div style="position:relative;height:180px"><canvas id="chartPos" role="img" aria-label="Posizione media giornaliera"></canvas></div>
+    </div>
+  </div>
+
+  <!-- INSIGHT -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #E52217;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#E52217;margin-bottom:6px">Crescita clic: +32% e +28% m/m</div><div style="font-size:11px;color:#595959;line-height:1.7">Da <strong style="color:#191919">18.653 clic</strong> di marzo a <strong style="color:#191919">31.668 di maggio</strong>. Crescita strutturale, non legata a singoli picchi. Il massimo è il 22-23 aprile (1.415-1.644 clic/giorno).</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #118541;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#118541;margin-bottom:6px">CTR in miglioramento strutturale (+58%)</div><div style="font-size:11px;color:#595959;line-height:1.7">Da <strong style="color:#191919">0,74% (marzo)</strong> a <strong style="color:#191919">1,17% (maggio, +30,9%)</strong>. Il CTR basso su pressione bassa (516k impr., 0,29%) mostra margine di ottimizzazione snippet.</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #DB5E29;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#DB5E29;margin-bottom:6px">Posizione media: peggioramento progressivo</div><div style="font-size:11px;color:#595959;line-height:1.7">Da <strong style="color:#191919">4,0 (marzo)</strong> a <strong style="color:#191919">6,8 (maggio, –29%)</strong>. I clic crescono lo stesso perché il sito espande l'indice verso query più numerose in pos. 5-10.</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #5781FF;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#5781FF;margin-bottom:6px">Impressioni stabili dopo il picco di aprile</div><div style="font-size:11px;color:#595959;line-height:1.7">Da <strong style="color:#191919">2,52M (marzo)</strong> a <strong style="color:#191919">2,79M (aprile, +10,7%)</strong> poi stabili a 2,71M. La crescita di clic a maggio si spiega col +30,9% di CTR.</div></div>
+  </div>
+</div>
+
+<!-- ============ BRAND ============ -->
+<div id="tab-brand" style="display:none">
+  <div style="margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #E5E5E5"><div style="font-size:18px;font-weight:800;text-transform:uppercase">Brand <span style="color:#E52217">vs No-Brand</span></div><div style="font-size:11px;color:#595959;margin-top:3px">Segmentazione clic e impressioni · Mar–Giu 2026 · fonte GSC</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Distribuzione clic brand vs no-brand</div>
+      <div style="position:relative;height:160px"><canvas id="chartBrand" role="img" aria-label="Distribuzione brand vs no-brand: 98.8% no-brand"></canvas></div>
+      <div style="margin-top:10px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><div style="width:8px;height:8px;border-radius:50%;background:#E52217"></div><div style="font-size:11px;color:#595959">Brand: <strong style="color:#191919">946 clic</strong> (1,2%)</div></div><div style="display:flex;align-items:center;gap:6px"><div style="width:8px;height:8px;border-radius:50%;background:#F4F5F6;border:1px solid #ccc"></div><div style="font-size:11px;color:#595959">No-Brand: <strong style="color:#191919">~76.753 clic</strong> (98,8%)</div></div></div>
+    </div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px;overflow-x:auto">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Query brand identificate (GSC)</div>
+      <table style="width:100%;border-collapse:collapse;font-size:11px">
+        <thead><tr style="background:#F4F5F6"><th style="text-align:left;padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Query</th><th style="padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">Clic</th><th style="padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">CTR</th><th style="padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">Pos.</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:7px 10px">farmacia carli</td><td style="padding:7px 10px;font-weight:700;text-align:right">540</td><td style="padding:7px 10px;color:#118541;font-weight:700;text-align:right">29,2%</td><td style="padding:7px 10px;text-align:right">2.1</td></tr>
+          <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:7px 10px">farmacia carli conegliano</td><td style="padding:7px 10px;font-weight:700;text-align:right">406</td><td style="padding:7px 10px;color:#118541;font-weight:700;text-align:right">24,9%</td><td style="padding:7px 10px;text-align:right">2.3</td></tr>
+          <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:7px 10px;color:#595959">farmacia carli l'aquila</td><td style="padding:7px 10px;color:#595959;text-align:right">0</td><td style="padding:7px 10px;color:#595959;text-align:right">0%</td><td style="padding:7px 10px;color:#595959;text-align:right">11.2</td></tr>
+          <tr><td style="padding:7px 10px;color:#595959">farmacia carli recensioni</td><td style="padding:7px 10px;color:#595959;text-align:right">0</td><td style="padding:7px 10px;color:#595959;text-align:right">0%</td><td style="padding:7px 10px;color:#595959;text-align:right">2.8</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #E52217;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#E52217;margin-bottom:6px">98,8% traffico no-brand</div><div style="font-size:11px;color:#595959;line-height:1.7">Positivo: il sito acquisisce utenti nella fase di scoperta. Il blog è il vero motore di acquisizione organica.</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #5781FF;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#5781FF;margin-bottom:6px">Brand CTR elevatissimo: 25–29%</div><div style="font-size:11px;color:#595959;line-height:1.7">Chi cerca direttamente la farmacia la trova con facilità. Notorietà locale solida ma volume contenuto (~946 clic): opportunità di rafforzare la brand awareness.</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #DB5E29;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#DB5E29;margin-bottom:6px">Homepage: 1.188 clic, CTR 4,5%</div><div style="font-size:11px;color:#595959;line-height:1.7">Traffico prevalentemente navigazionale. Da ottimizzare title/description per intercettare query locali non-brand (es. "farmacia online Conegliano").</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #118541;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#118541;margin-bottom:6px">Priorità: consolidare il no-brand</div><div style="font-size:11px;color:#595959;line-height:1.7">Scalare il posizionamento informazionale e lavorare sulle pagine prodotto/categoria per intercettare la domanda transazionale downstream al blog.</div></div>
+  </div>
+</div>
+
+<!-- ============ PAGINE ============ -->
+<div id="tab-pages" style="display:none">
+  <div style="margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #E5E5E5"><div style="font-size:18px;font-weight:800;text-transform:uppercase">Pagine <span style="color:#E52217">e Tipologie</span></div><div style="font-size:11px;color:#595959;margin-top:3px">Top URL per clic · Mar–Giu 2026 · senza Ozempic · GSC</div></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Distribuzione clic per tipologia</div>
+      <div style="position:relative;height:150px"><canvas id="chartPageTypes" role="img" aria-label="Blog 62%, Prodotti 20%, Categorie 14%, Altro 4%"></canvas></div>
+      <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:8px">
+        <span style="display:flex;align-items:center;gap:4px;font-size:11px;color:#595959"><span style="width:8px;height:8px;border-radius:2px;background:#5781FF;display:inline-block"></span>Blog ~62%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:11px;color:#595959"><span style="width:8px;height:8px;border-radius:2px;background:#DB5E29;display:inline-block"></span>Prodotti ~20%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:11px;color:#595959"><span style="width:8px;height:8px;border-radius:2px;background:#118541;display:inline-block"></span>Categorie ~14%</span>
+        <span style="display:flex;align-items:center;gap:4px;font-size:11px;color:#595959"><span style="width:8px;height:8px;border-radius:2px;background:#E52217;display:inline-block"></span>Altro ~4%</span>
+      </div>
+    </div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Top pagine per clic</div>
+      <div id="barPages"></div>
+    </div>
+  </div>
+
+  <!-- CONNESSIONE BLOG→PRODOTTO -->
+  <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;overflow:hidden;margin-bottom:16px">
+    <div style="padding:12px 16px;border-bottom:1px solid #E5E5E5;display:flex;align-items:center;justify-content:space-between">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em">Connessione Blog → Prodotto / Categoria</div>
+      <span style="background:#5781FF;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase">Analisi editoriale</span>
+    </div>
+    <div style="padding:10px 14px;background:#EBF5FF;border-bottom:1px solid #E5E5E5;font-size:11px;color:#1a3a6e;line-height:1.6"><strong>Come leggere:</strong> Diretta = blog già genera intent verso la pagina commerciale; Indiretta = blog correlato, link non ottimizzato; Assente = opportunità editoriale da creare.</div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:11px;min-width:600px">
+        <thead><tr style="background:#F4F5F6">
+          <th style="text-align:left;padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Pagina</th>
+          <th style="padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">Clic</th>
+          <th style="padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">CTR</th>
+          <th style="padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Conn.</th>
+          <th style="padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Opportunità</th>
+        </tr></thead>
+        <tbody id="connTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #118541;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#118541;margin-bottom:6px">Il modello blog → prodotto funziona</div><div style="font-size:11px;color:#595959;line-height:1.7">Dove esiste una coppia editoriale coerente (colesterolo+profilo lipidico; keto+categoria; virus intestinale+stomaco) le pagine commerciali hanno CTR e posizioni migliori. Modello replicabile.</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #DB5E29;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#DB5E29;margin-bottom:6px">3 aree senza copertura editoriale</div><div style="font-size:11px;color:#595959;line-height:1.7">Stresstab/stress, Minoxidil/caduta capelli, Voltadexi/dolori articolari: nessun articolo blog di supporto. Alta opportunità editoriale.</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #E52217;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#E52217;margin-bottom:6px">Pressione bassa: CTR 0,29% con 516k impressioni</div><div style="font-size:11px;color:#595959;line-height:1.7">L'articolo più "sprecato": 516k impressioni e solo 1.484 clic. Ottimizzare title e meta description potrebbe triplicare i clic.</div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #5781FF;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#5781FF;margin-bottom:6px">Dieta keto: modello di successo replicabile</div><div style="font-size:11px;color:#595959;line-height:1.7">Articolo keto (4.473 clic) + /collections/dieta-chetogenica (CTR 2,83%): la coppia editoriale migliore del sito. Da replicare su tutti i cluster.</div></div>
+  </div>
+</div>
+
+<!-- ============ QUERY ============ -->
+<div id="tab-queries" style="display:none">
+  <div style="margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #E5E5E5"><div style="font-size:18px;font-weight:800;text-transform:uppercase">Andamento <span style="color:#E52217">Query</span></div><div style="font-size:11px;color:#595959;margin-top:3px">Top query per clic · Mar–Giu 2026 · senza Ozempic · GSC</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Top 10 query per clic (no-brand)</div><div id="barQuery"></div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:16px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">CTR più alto (min 500 impr., no-brand)</div><div id="barCtr"></div></div>
+  </div>
+  <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;overflow:hidden;margin-bottom:16px">
+    <div style="padding:12px 16px;border-bottom:1px solid #E5E5E5;display:flex;align-items:center;justify-content:space-between"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em">Top 50 query organiche</div><span style="background:#E52217;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase">GSC</span></div>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:11px;min-width:500px">
+      <thead><tr style="background:#F4F5F6"><th style="text-align:left;padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">#</th><th style="text-align:left;padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Query</th><th style="padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Tipo</th><th style="padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">Clic</th><th style="padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">CTR</th><th style="padding:7px 10px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">Pos.</th></tr></thead>
+      <tbody id="queryTable"></tbody>
+    </table></div>
+  </div>
+</div>
+
+<!-- ============ AHREFS ============ -->
+<div id="tab-ahrefs" style="display:none">
+  <div style="margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #E5E5E5;display:flex;align-items:flex-end;justify-content:space-between"><div><div style="font-size:18px;font-weight:800;text-transform:uppercase">Dati <span style="color:#E52217">Ahrefs</span></div><div style="font-size:11px;color:#595959;margin-top:3px">Keyword organiche · dic 2025 – giu 2026 · mercato IT · confronto m/m</div></div><span style="background:#118541;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase">Fonte Ahrefs</span></div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px">
+    <div style="background:#fff;border-radius:8px;padding:14px;border:1px solid #E5E5E5;border-top:3px solid #E52217"><div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#595959;margin-bottom:5px">KW totali (giu)</div><div style="font-size:24px;font-weight:800;line-height:1">3.164</div><div style="font-size:11px;color:#118541;font-weight:600;margin-top:3px">↑ Da 2.018 dic (+56,8%)</div></div>
+    <div style="background:#fff;border-radius:8px;padding:14px;border:1px solid #E5E5E5;border-top:3px solid #5781FF"><div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#595959;margin-bottom:5px">KW top 3 (giu)</div><div style="font-size:24px;font-weight:800;line-height:1">895</div><div style="font-size:11px;color:#E52217;font-weight:600;margin-top:3px">↓ –31,2% vs apr (1.301)</div></div>
+    <div style="background:#fff;border-radius:8px;padding:14px;border:1px solid #E5E5E5;border-top:3px solid #118541"><div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#595959;margin-bottom:5px">KW top 4-10 (giu)</div><div style="font-size:24px;font-weight:800;line-height:1">1.584</div><div style="font-size:11px;color:#118541;font-weight:600;margin-top:3px">↑ Da 534 dic (+196,6%)</div></div>
+    <div style="background:#fff;border-radius:8px;padding:14px;border:1px solid #E5E5E5;border-top:3px solid #DB5E29"><div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#595959;margin-bottom:5px">KW top 11+ (giu)</div><div style="font-size:24px;font-weight:800;line-height:1">685</div><div style="font-size:11px;color:#E52217;font-weight:600;margin-top:3px">↓ –32% vs dic (1.008)</div></div>
+  </div>
+  <!-- evoluzione mensile -->
+  <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:14px;margin-bottom:14px">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Evoluzione keyword totali · mese su mese</div>
+    <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px">
+      <div style="background:#F4F5F6;border-radius:5px;padding:8px;text-align:center"><div style="font-size:9px;font-weight:700;text-transform:uppercase;color:#595959">Dic 25</div><div style="font-size:14px;font-weight:800;margin-top:2px">2.018</div><div style="font-size:9px;color:#595959">baseline</div></div>
+      <div style="background:#F4F5F6;border-radius:5px;padding:8px;text-align:center"><div style="font-size:9px;font-weight:700;text-transform:uppercase;color:#595959">Gen 26</div><div style="font-size:14px;font-weight:800;margin-top:2px">3.343</div><div style="font-size:9px;color:#118541;font-weight:700">↑ +65,7%</div></div>
+      <div style="background:#F4F5F6;border-radius:5px;padding:8px;text-align:center"><div style="font-size:9px;font-weight:700;text-transform:uppercase;color:#595959">Feb 26</div><div style="font-size:14px;font-weight:800;margin-top:2px">3.633</div><div style="font-size:9px;color:#118541;font-weight:700">↑ +8,7%</div></div>
+      <div style="background:#F4F5F6;border-radius:5px;padding:8px;text-align:center"><div style="font-size:9px;font-weight:700;text-transform:uppercase;color:#595959">Mar 26</div><div style="font-size:14px;font-weight:800;margin-top:2px">3.626</div><div style="font-size:9px;color:#595959">~ stabile</div></div>
+      <div style="background:#F4F5F6;border-radius:5px;padding:8px;text-align:center"><div style="font-size:9px;font-weight:700;text-transform:uppercase;color:#595959">Apr 26</div><div style="font-size:14px;font-weight:800;margin-top:2px">3.699</div><div style="font-size:9px;color:#118541;font-weight:700">↑ +2,0%</div></div>
+      <div style="background:#F4F5F6;border-radius:5px;padding:8px;text-align:center"><div style="font-size:9px;font-weight:700;text-transform:uppercase;color:#595959">Mag 26</div><div style="font-size:14px;font-weight:800;margin-top:2px">3.920</div><div style="font-size:9px;color:#118541;font-weight:700">↑ +5,9%</div></div>
+      <div style="background:#FFF7F7;border-radius:5px;padding:8px;text-align:center;border:1px solid #E52217"><div style="font-size:9px;font-weight:700;text-transform:uppercase;color:#E52217">Giu 26</div><div style="font-size:14px;font-weight:800;margin-top:2px;color:#E52217">3.164</div><div style="font-size:9px;color:#E52217;font-weight:700">↓ –19,3%</div></div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:14px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px">KW per fascia di posizione (stacked)</div><div style="font-size:11px;color:#595959;margin-bottom:10px">Top 3 / 4-10 / 11+</div><div style="position:relative;height:200px"><canvas id="chartKwStack" role="img" aria-label="Keyword per fascia di posizione dic 2025 giu 2026"></canvas></div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;padding:14px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3px">Top 3 vs top 4-10</div><div style="font-size:11px;color:#595959;margin-bottom:10px">Evoluzione fasce principali</div><div style="position:relative;height:200px"><canvas id="chartKwLine" role="img" aria-label="Evoluzione keyword top 3 e top 4-10"></canvas></div></div>
+  </div>
+  <!-- competitor table -->
+  <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;overflow:hidden;margin-bottom:16px">
+    <div style="padding:12px 16px;border-bottom:1px solid #E5E5E5;display:flex;align-items:center;justify-content:space-between"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em">Competitor organici · Italia · giu 2026</div><span style="background:#118541;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase">Ahrefs</span></div>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:11px">
+      <thead><tr style="background:#F4F5F6"><th style="text-align:left;padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Dominio</th><th style="padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">KW comuni</th><th style="padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">KW totali</th><th style="padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5;text-align:right">DR</th><th style="text-align:left;padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Note</th></tr></thead>
+      <tbody id="compTable"></tbody>
+    </table></div>
+  </div>
+</div>
+
+<!-- ============ AGENDA ============ -->
+<div id="tab-agenda" style="display:none">
+  <div style="margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid #E5E5E5"><div style="font-size:18px;font-weight:800;text-transform:uppercase">Punto della <span style="color:#E52217">Situazione</span></div><div style="font-size:11px;color:#595959;margin-top:3px">Sintesi attività, cose in sospeso e KPI da monitorare</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #118541;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#118541;margin-bottom:8px">Cosa sta funzionando</div><div style="font-size:11px;color:#595959;line-height:1.7"><ul style="padding-left:14px;margin:0"><li><strong style="color:#191919">Blog:</strong> 62% traffico organico, +32% mar→apr, +28% apr→mag</li><li><strong style="color:#191919">CTR:</strong> da 0,74% a 1,17% in 2 mesi (+58%)</li><li><strong style="color:#191919">KW totali:</strong> da 2.018 a 3.164 in 6 mesi (+56,8%)</li><li><strong style="color:#191919">Cluster keto/colesterolo/intestino:</strong> modello blog→categoria funzionante</li></ul></div></div>
+    <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;border-left:4px solid #DB5E29;padding:14px 16px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:#DB5E29;margin-bottom:8px">Cosa richiede attenzione</div><div style="font-size:11px;color:#595959;line-height:1.7"><ul style="padding-left:14px;margin:0"><li><strong style="color:#191919">Posizione media:</strong> da 4,0 a 6,8 in 3 mesi</li><li><strong style="color:#191919">KW top 3:</strong> calo –31% da aprile a giugno</li><li><strong style="color:#191919">CTR /collections:</strong> 0,18-0,86%, sotto il potenziale</li><li><strong style="color:#191919">Snippet:</strong> pressione bassa 0,29%, magnesio 0,21%</li><li><strong style="color:#191919">Copertura blog:</strong> stress, capelli, dolori senza articoli</li></ul></div></div>
+  </div>
+
+  <!-- SOSPESI -->
+  <div style="background:#fff;border-radius:8px 8px 0 0;border:1px solid #E5E5E5;border-bottom:none;padding:12px 16px;display:flex;align-items:center;justify-content:space-between"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em">Attività in sospeso · da discutere</div><span style="background:#DB5E29;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase">Da definire in call</span></div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border:1px solid #E5E5E5;border-top:none;border-radius:0 0 8px 8px;background:#fff;padding:14px;margin-bottom:16px">
+    <div style="border-radius:6px;border:1px solid #E5E5E5;border-top:3px solid #DB5E29;padding:12px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:5px">Architettura Informativa</div><div style="font-size:11px;color:#595959;line-height:1.6">Audit /collections: title, meta, contenuti editoriali. Priorità su pagine con alte impressioni e CTR bassissimo.</div><span style="display:inline-block;margin-top:8px;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;background:#F0F0F0;color:#555">Da avviare</span></div>
+    <div style="border-radius:6px;border:1px solid #E5E5E5;border-top:3px solid #DB5E29;padding:12px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:5px">Pagine Marchi</div><div style="font-size:11px;color:#595959;line-height:1.6">Dolomia, La Roche-Posay, Patyka, CeraVe: testi SEO, interlinking da blog, FAQ editoriali.</div><span style="display:inline-block;margin-top:8px;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;background:#F0F0F0;color:#555">Da avviare</span></div>
+    <div style="border-radius:6px;border:1px solid #E5E5E5;border-top:3px solid #DB5E29;padding:12px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:5px">Link Building</div><div style="font-size:11px;color:#595959;line-height:1.6">Strategia di acquisizione link su articoli chiave. Da definire approccio (PR digitale, guest posting).</div><span style="display:inline-block;margin-top:8px;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;background:#F0F0F0;color:#555">Da definire</span></div>
+    <div style="border-radius:6px;border:1px solid #E5E5E5;border-top:3px solid #E52217;padding:12px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:5px">Dati Strutturati</div><div style="font-size:11px;color:#595959;line-height:1.6">Schema markup su Product, FAQPage, LocalBusiness, MedicalWebPage. Quick win ad alto impatto.</div><span style="display:inline-block;margin-top:8px;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;background:#FFE7E6;color:#E52217">Priorità alta</span></div>
+    <div style="border-radius:6px;border:1px solid #E5E5E5;border-top:3px solid #DB5E29;padding:12px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:5px">Nuovi contenuti blog</div><div style="font-size:11px;color:#595959;line-height:1.6">Articoli su stress (→Stresstab), caduta capelli (→Minoxidil), dolori articolari (→Voltadexi).</div><span style="display:inline-block;margin-top:8px;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;background:#F0F0F0;color:#555">Da pianificare</span></div>
+    <div style="border-radius:6px;border:1px solid #E5E5E5;border-top:3px solid #E52217;padding:12px"><div style="font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:5px">Ottimizzazione snippet</div><div style="font-size:11px;color:#595959;line-height:1.6">Title/meta su: pressione bassa (516k impr., 0,29%), magnesio (449k impr., 0,21%).</div><span style="display:inline-block;margin-top:8px;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;background:#FFE7E6;color:#E52217">Priorità alta</span></div>
+  </div>
+
+  <!-- KPI -->
+  <div style="background:#fff;border-radius:8px;border:1px solid #E5E5E5;overflow:hidden;margin-bottom:16px">
+    <div style="padding:12px 16px;border-bottom:1px solid #E5E5E5;display:flex;align-items:center;justify-content:space-between"><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em">KPI suggeriti da monitorare</div><span style="background:#E52217;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase">Senza target</span></div>
+    <table style="width:100%;border-collapse:collapse;font-size:11px">
+      <thead><tr style="background:#F4F5F6"><th style="text-align:left;padding:7px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">KPI</th><th style="padding:7px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Baseline</th><th style="padding:7px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Freq.</th><th style="padding:7px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Strumento</th><th style="text-align:left;padding:7px 12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#595959;border-bottom:1px solid #E5E5E5">Perché monitorarlo</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:7px 12px;font-weight:600">Clic organici mensili</td><td style="padding:7px 12px;color:#595959">~25.900/mese</td><td style="padding:7px 12px;color:#595959">Mensile</td><td style="padding:7px 12px;color:#595959">GSC</td><td style="padding:7px 12px;color:#595959">Indicatore principale di salute del canale</td></tr>
+        <tr style="border-bottom:1px solid #f0f0f0;background:#FFF7F7"><td style="padding:7px 12px;font-weight:600;border-left:3px solid #E52217">CTR medio</td><td style="padding:7px 12px;color:#595959">0,94% (media 3M)</td><td style="padding:7px 12px;color:#595959">Mensile</td><td style="padding:7px 12px;color:#595959">GSC</td><td style="padding:7px 12px;color:#595959">Collegato a schema markup e ottimizzazioni title</td></tr>
+        <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:7px 12px;font-weight:600">Posizione media</td><td style="padding:7px 12px;color:#595959">~5,5 (media 3M)</td><td style="padding:7px 12px;color:#595959">Mensile</td><td style="padding:7px 12px;color:#595959">GSC</td><td style="padding:7px 12px;color:#595959">Segnale precoce di pressione competitiva</td></tr>
+        <tr style="border-bottom:1px solid #f0f0f0;background:#FFF7F7"><td style="padding:7px 12px;font-weight:600;border-left:3px solid #E52217">CTR pagine /collections</td><td style="padding:7px 12px;color:#595959">0,18% – 0,86%</td><td style="padding:7px 12px;color:#595959">Trimestrale</td><td style="padding:7px 12px;color:#595959">GSC</td><td style="padding:7px 12px;color:#595959">Misura impatto ottimizzazione architettura informativa</td></tr>
+        <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:7px 12px;font-weight:600">KW in top 3</td><td style="padding:7px 12px;color:#595959">895 (giu 2026)</td><td style="padding:7px 12px;color:#595959">Mensile</td><td style="padding:7px 12px;color:#595959">Ahrefs</td><td style="padding:7px 12px;color:#595959">Segnale di consolidamento posizionale</td></tr>
+        <tr style="border-bottom:1px solid #f0f0f0;background:#FFF7F7"><td style="padding:7px 12px;font-weight:600;border-left:3px solid #E52217">KW in top 4-10</td><td style="padding:7px 12px;color:#595959">1.584 (giu 2026)</td><td style="padding:7px 12px;color:#595959">Mensile</td><td style="padding:7px 12px;color:#595959">Ahrefs</td><td style="padding:7px 12px;color:#595959">Pool vicino alla top 3, priorità per link building</td></tr>
+        <tr style="border-bottom:1px solid #f0f0f0"><td style="padding:7px 12px;font-weight:600">CTR articoli alto vol./basso CTR</td><td style="padding:7px 12px;color:#595959">Pressione bassa 0,29%</td><td style="padding:7px 12px;color:#595959">Mensile</td><td style="padding:7px 12px;color:#595959">GSC</td><td style="padding:7px 12px;color:#595959">Impatto ottimizzazioni snippet sulle pagine identificate</td></tr>
+        <tr><td style="padding:7px 12px;font-weight:600">Clic /products (aggregate)</td><td style="padding:7px 12px;color:#595959">~8.000 clic (3M)</td><td style="padding:7px 12px;color:#595959">Trimestrale</td><td style="padding:7px 12px;color:#595959">GSC</td><td style="padding:7px 12px;color:#595959">Misura miglioramento canale transazionale</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="background:#FFFBEB;border:1px solid #F59E0B;border-left:4px solid #F59E0B;border-radius:6px;padding:12px 16px;font-size:11px;color:#92400E;line-height:1.6">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#B45309;margin-bottom:4px">Postilla · Dato escluso: Ozempic e Wegovy</div>
+    L'URL <strong>farmaciacarli.it/blogs/news/ozempic-e-wegovy</strong> genera nel periodo indicativamente oltre <strong>19.000 clic e ~1,4 milioni di impressioni</strong>, CTR ~1,3-1,4%, posizione media 8-9. Escluso perché outlier che distorcerebbe ogni media e trend.
+  </div>
+</div>
+
+</div><!-- /main -->
+
+<div style="background:#191919;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;margin-top:32px">
+  <div style="display:flex;align-items:center;gap:10px">
+    <img src="https://mocainteractive.com/assets/svg/logo-light.svg" style="height:16px;opacity:.7" alt="MOCA">
+    <span style="font-size:10px;color:#555">MOCA Interactive · SEO Report · Farmacia Carli · 2026</span>
+  </div>
+  <span style="font-size:10px;color:#555">Dati: Google Search Console · Ahrefs</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const gscDates=['04/03','05/03','06/03','07/03','08/03','09/03','10/03','11/03','12/03','13/03','14/03','15/03','16/03','17/03','18/03','19/03','20/03','21/03','22/03','23/03','24/03','25/03','26/03','27/03','28/03','29/03','30/03','31/03','01/04','02/04','03/04','04/04','05/04','06/04','07/04','08/04','09/04','10/04','11/04','12/04','13/04','14/04','15/04','16/04','17/04','18/04','19/04','20/04','21/04','22/04','23/04','24/04','25/04','26/04','27/04','28/04','29/04','30/04','01/05','02/05','03/05','04/05','05/05','06/05','07/05','08/05','09/05','10/05','11/05','12/05','13/05','14/05','15/05','16/05','17/05','18/05','19/05','20/05','21/05','22/05','23/05','24/05','25/05','26/05','27/05','28/05','29/05','30/05','31/05','01/06','02/06','03/06'];
+const clicData=[870,902,659,622,564,762,855,593,688,557,652,639,722,640,697,603,687,665,555,661,677,649,678,658,548,535,674,641,604,595,504,436,399,498,606,678,829,622,527,592,707,783,783,746,1242,1212,1078,1001,977,1415,1644,1031,831,830,871,909,960,791,755,719,751,1338,1282,1282,1445,1150,866,936,1013,1080,912,823,726,769,1043,1033,1089,1015,1005,1174,1214,1087,1207,1001,1075,988,997,947,946,950,901,826];
+const ctrData=[0.87,0.94,0.74,0.82,0.84,0.92,0.99,0.71,0.80,0.65,0.78,0.71,0.78,0.67,0.77,0.68,0.75,0.75,0.67,0.69,0.67,0.63,0.68,0.70,0.66,0.63,0.65,0.63,0.62,0.65,0.59,0.59,0.57,0.62,0.57,0.68,0.74,0.63,0.61,0.62,0.64,0.74,0.77,0.78,0.88,1.04,0.95,0.96,1.08,1.47,1.68,1.38,1.34,1.19,1.09,1.11,1.14,1.11,1.17,1.05,1.00,1.40,1.27,1.17,1.33,1.19,1.09,1.11,1.06,1.10,1.03,1.08,1.03,1.19,1.64,1.30,1.34,1.18,1.24,1.33,1.39,1.19,1.18,1.01,1.05,0.97,1.06,1.08,1.08,1.01,1.05,1.00];
+const posData=[4.6,5.1,4.6,4.3,4.4,4.1,4.1,4.2,4.0,3.9,4.1,4.1,4.2,3.9,3.8,3.8,3.8,3.8,3.8,3.9,3.7,3.7,3.9,4.0,3.7,3.6,3.7,3.8,3.8,3.8,3.8,3.8,3.7,3.8,3.7,4.0,3.9,4.3,4.1,4.0,4.2,4.5,4.6,4.6,4.2,4.5,4.6,5.5,9.1,7.0,6.8,7.5,7.9,7.5,7.4,7.3,7.4,7.2,6.9,6.6,8.2,7.7,6.6,6.4,6.1,6.7,6.9,6.9,6.8,6.3,7.3,7.0,6.7,6.8,7.0,6.9,6.8,6.7,6.7,6.6,6.7,6.8,6.7,6.8,6.6,6.6,6.6,6.7,6.6,6.4,6.3,6.5];
+const ahrefsM=['Dic 25','Gen 26','Feb 26','Mar 26','Apr 26','Mag 26','Giu 26'];
+const kwTop3=[477,673,775,1197,1301,1242,895];
+const kw410=[533,586,660,794,1103,1665,1584];
+const kw11=[1008,2084,2198,1635,1295,1013,685];
+const queries=[
+  {q:'virus intestinale',t:'Info',c:1132,ctr:'1,75%',p:'1.9'},
+  {q:'farmacia carli',t:'Brand',c:540,ctr:'29,2%',p:'2.1'},
+  {q:'insulino resistenza',t:'Info',c:487,ctr:'0,58%',p:'5.0'},
+  {q:'stresstab integratore',t:'Prodotto',c:443,ctr:'33,3%',p:'1.7'},
+  {q:'farmacia carli conegliano',t:'Brand',c:406,ctr:'3,98%',p:'2.8'},
+  {q:'come abbassare il colesterolo',t:'Info',c:428,ctr:'1,38%',p:'2.1'},
+  {q:'dieta 21 giorni 10 kg',t:'Info',c:420,ctr:'11,3%',p:'2.6'},
+  {q:'stresstab',t:'Prodotto',c:409,ctr:'20,6%',p:'2.2'},
+  {q:'insulino resistenza si guarisce',t:'Info',c:365,ctr:'4,84%',p:'1.5'},
+  {q:'dieta chetogenica',t:'Info',c:323,ctr:'0,32%',p:'9.4'},
+  {q:'boswellia',t:'Info',c:276,ctr:'1,48%',p:'5.7'},
+  {q:'virus intestinale quanto dura',t:'Info',c:213,ctr:'1,59%',p:'2.1'},
+  {q:'sciroppo tosse secca',t:'Trans',c:211,ctr:'1,41%',p:'3.6'},
+  {q:'fermenti lattici quando prenderli',t:'Info',c:194,ctr:'1,24%',p:'2.3'},
+  {q:'sciroppo tosse',t:'Trans',c:191,ctr:'0,65%',p:'3.8'},
+  {q:'lioton gel',t:'Prodotto',c:168,ctr:'5,26%',p:'2.6'},
+  {q:'dieta chetogenica menu',t:'Info',c:155,ctr:'1,68%',p:'5.3'},
+  {q:'rinorex aerosol',t:'Prodotto',c:148,ctr:'1,26%',p:'5.6'},
+  {q:'abbassare colesterolo in 3 giorni',t:'Info',c:146,ctr:'0,81%',p:'3.4'},
+  {q:'stress tab',t:'Prodotto',c:142,ctr:'42,4%',p:'1.5'},
+  {q:'trofodermin crema',t:'Prodotto',c:123,ctr:'1,71%',p:'4.0'},
+  {q:'virus gastrointestinale',t:'Info',c:117,ctr:'0,70%',p:'3.2'},
+  {q:'vitamina d bassa',t:'Info',c:111,ctr:'0,61%',p:'1.7'},
+  {q:'holter cardiaco prezzo',t:'Trans',c:88,ctr:'2,38%',p:'2.9'},
+  {q:'colesterolo alto',t:'Info',c:80,ctr:'0,69%',p:'1.5'},
+];
+const connRows=[
+  {p:'/products/stresstab-balance',c:1423,ctr:'25,4%',conn:'none',opp:'Articolo su stress → link al prodotto'},
+  {p:'/products/holter-cardiaco',c:802,ctr:'1,1%',conn:'ind',opp:'Ottimizzare link da art. telemedicina'},
+  {p:'/products/profilo-lipidico',c:572,ctr:'1,3%',conn:'yes',opp:'Coppia forte. Verificare internal link.'},
+  {p:'/products/vitamina-d',c:465,ctr:'0,8%',conn:'yes',opp:'Coppia editoriale forte. Verificare link.'},
+  {p:'/collections/tosse-secca-e-mista',c:853,ctr:'0,9%',conn:'yes',opp:'Art. su tosse rafforzerebbe ulteriormente'},
+  {p:'/collections/stomaco-e-intestino',c:491,ctr:'0,7%',conn:'yes',opp:'Art. virus intestinale: link a cat. essenziale'},
+  {p:'/collections/dieta-chetogenica',c:461,ctr:'2,8%',conn:'yes',opp:'CTR 2,8%: modello replicabile'},
+  {p:'/products/liotontrauma-gel',c:360,ctr:'2,3%',conn:'ind',opp:'Citare gel nell\'art. infiammazioni'},
+  {p:'/products/minoxidil-biorga',c:264,ctr:'1,0%',conn:'none',opp:'Art. caduta capelli → link. Alta opportunità.'},
+  {p:'/products/voltadexi',c:239,ctr:'0,6%',conn:'ind',opp:'Link nell\'art. infiammazioni'},
+];
+const compRows=[
+  {d:'drmax.it',kc:650,kt:84573,dr:55,note:'Competitor principale · scala enormemente superiore',client:false},
+  {d:'farmacistipreparatori.it',kc:166,kt:5346,dr:63,note:'DR molto alto · settore preparazioni',client:false},
+  {d:'biogena.com',kc:215,kt:8275,dr:74,note:'DR molto alto · focus integratori',client:false},
+  {d:'anticafarmaciaorlandi.it',kc:138,kt:15122,dr:42,note:'Simile per scala · farmacia online',client:false},
+  {d:'farmattiva.it',kc:146,kt:12829,dr:3,note:'DR molto basso · strategie aggressive',client:false},
+  {d:'farmaciacarli.it',kc:'–',kt:3164,dr:'n.d.',note:'Posizionamento attuale · in crescita',client:true},
+  {d:'farmaciafornari.it',kc:78,kt:12681,dr:9,note:'DR basso · molte keyword comuni',client:false},
+  {d:'boiron.it',kc:200,kt:4126,dr:38,note:'Focus omeopatia · parziale sovrapposizione',client:false},
+];
+
+const F={family:'Figtree,system-ui',size:10};
+let charts={};
+function mk(id,cfg){if(charts[id]){charts[id].destroy()}charts[id]=new Chart(document.getElementById(id),cfg)}
+
+function buildOverviewCharts(){
+  const bgC=clicData.map((_,i)=>i<28?'rgba(229,34,23,0.3)':i<58?'rgba(87,129,255,0.3)':'rgba(17,133,65,0.3)');
+  const bdC=clicData.map((_,i)=>i<28?'#E52217':i<58?'#5781FF':'#118541');
+  mk('chartClics',{type:'bar',data:{labels:gscDates,datasets:[{data:clicData,backgroundColor:bgC,borderColor:bdC,borderWidth:1.2,borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false}},scales:{x:{ticks:{font:F,maxRotation:45,maxTicksLimit:18},grid:{display:false}},y:{ticks:{font:F},grid:{color:'rgba(0,0,0,0.05)'}}}}});
+  mk('chartCtr',{type:'line',data:{labels:gscDates,datasets:[{data:ctrData,borderColor:'#118541',backgroundColor:'rgba(17,133,65,0.05)',borderWidth:1.8,fill:true,tension:0.3,pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{font:F,maxTicksLimit:10},grid:{display:false}},y:{ticks:{font:F,callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.05)'}}}}});
+  mk('chartPos',{type:'line',data:{labels:gscDates,datasets:[{data:posData,borderColor:'#DB5E29',backgroundColor:'rgba(219,94,41,0.05)',borderWidth:1.8,fill:true,tension:0.3,pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{font:F,maxTicksLimit:10},grid:{display:false}},y:{reverse:true,ticks:{font:F},grid:{color:'rgba(0,0,0,0.05)'}}}}});
+}
+function buildBrandCharts(){
+  mk('chartBrand',{type:'doughnut',data:{labels:['Brand','No-Brand'],datasets:[{data:[946,76753],backgroundColor:['#E52217','#F4F5F6'],borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,cutout:'72%',plugins:{legend:{display:false}}}});
+}
+function buildPageCharts(){
+  mk('chartPageTypes',{type:'doughnut',data:{labels:['Blog','Prodotti','Categorie','Altro'],datasets:[{data:[25309,8000,3600,1600],backgroundColor:['#5781FF','#DB5E29','#118541','#E52217'],borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,cutout:'65%',plugins:{legend:{display:false}}}});
+  const bd=[{l:'virus intestinale (blog)',v:5272,col:'#5781FF'},{l:'dieta keto (blog)',v:4473,col:'#5781FF'},{l:'colesterolo (blog)',v:4053,col:'#5781FF'},{l:'Stresstab (prodotto)',v:1423,col:'#DB5E29'},{l:'pressione bassa (blog)',v:1484,col:'#5781FF'},{l:'holter cardiaco (prod.)',v:802,col:'#DB5E29'},{l:'tosse secca (cat.)',v:853,col:'#118541'}];
+  const mx=5272;
+  document.getElementById('barPages').innerHTML=bd.map(d=>`<div style="display:flex;align-items:center;gap:8px;margin-bottom:7px"><div style="font-size:10px;width:155px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#191919" title="${d.l}">${d.l}</div><div style="flex:1;background:#F4F5F6;border-radius:3px;height:7px;overflow:hidden"><div style="height:100%;background:${d.col};width:${(d.v/mx*100).toFixed(0)}%"></div></div><div style="font-size:10px;font-weight:700;width:46px;text-align:right;flex-shrink:0">${d.v.toLocaleString('it')}</div></div>`).join('');
+  const connTpl=connRows.map(r=>{
+    const badge=r.conn==='yes'?'<span style="background:#EBF3EF;color:#118541;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600">Diretta ✓</span>':r.conn==='ind'?'<span style="background:#EBF5FF;color:#5781FF;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600">Indiretta</span>':'<span style="background:#F0F0F0;color:#888;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600">Assente</span>';
+    return`<tr style="border-bottom:1px solid #f0f0f0"><td style="padding:7px 10px;font-size:10px;color:#595959;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.p}</td><td style="padding:7px 10px;font-weight:700;text-align:right">${r.c.toLocaleString('it')}</td><td style="padding:7px 10px;text-align:right">${r.ctr}</td><td style="padding:7px 10px">${badge}</td><td style="padding:7px 10px;font-size:10px;color:#595959">${r.opp}</td></tr>`;
+  }).join('');
+  document.getElementById('connTable').innerHTML=connTpl;
+}
+function buildQueryCharts(){
+  const nb=queries.filter(q=>q.t!=='Brand').sort((a,b)=>b.c-a.c).slice(0,10);
+  const mx=nb[0].c;
+  document.getElementById('barQuery').innerHTML=nb.map(d=>`<div style="display:flex;align-items:center;gap:8px;margin-bottom:7px"><div style="font-size:10px;width:155px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${d.q}">${d.q}</div><div style="flex:1;background:#F4F5F6;border-radius:3px;height:7px;overflow:hidden"><div style="height:100%;background:#5781FF;width:${(d.c/mx*100).toFixed(0)}%"></div></div><div style="font-size:10px;font-weight:700;width:40px;text-align:right;flex-shrink:0">${d.c.toLocaleString('it')}</div></div>`).join('');
+  const tpc=queries.filter(q=>q.t!=='Brand').sort((a,b)=>parseFloat(b.ctr)-parseFloat(a.ctr)).slice(0,9);
+  const mxC=parseFloat(tpc[0].ctr);
+  document.getElementById('barCtr').innerHTML=tpc.map(d=>`<div style="display:flex;align-items:center;gap:8px;margin-bottom:7px"><div style="font-size:10px;width:155px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${d.q}">${d.q}</div><div style="flex:1;background:#F4F5F6;border-radius:3px;height:7px;overflow:hidden"><div style="height:100%;background:#118541;width:${(parseFloat(d.ctr)/mxC*100).toFixed(0)}%"></div></div><div style="font-size:10px;font-weight:700;width:40px;text-align:right;flex-shrink:0">${d.ctr}</div></div>`).join('');
+  const pillMap={Brand:'background:#F3EFFF;color:#551FC4',Info:'background:#EBF5FF;color:#5781FF',Trans:'background:#EBF3EF;color:#118541',Prodotto:'background:#FFF3EB;color:#DB5E29'};
+  document.getElementById('queryTable').innerHTML=queries.map((q,i)=>`<tr style="border-bottom:1px solid #f0f0f0"><td style="padding:6px 10px;color:#595959">${i+1}</td><td style="padding:6px 10px;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${q.q}</td><td style="padding:6px 10px"><span style="padding:2px 6px;border-radius:3px;font-size:10px;font-weight:600;${pillMap[q.t]||''}">${q.t}</span></td><td style="padding:6px 10px;font-weight:700;text-align:right">${q.c.toLocaleString('it')}</td><td style="padding:6px 10px;text-align:right;${parseFloat(q.ctr)>10?'color:#118541;font-weight:700':''}">${q.ctr}</td><td style="padding:6px 10px;text-align:right">${q.p}</td></tr>`).join('');
+}
+function buildAhrefsCharts(){
+  mk('chartKwStack',{type:'bar',data:{labels:ahrefsM,datasets:[{label:'Top 3',data:kwTop3,backgroundColor:'#E52217',borderRadius:2},{label:'Top 4-10',data:kw410,backgroundColor:'#5781FF',borderRadius:2},{label:'Top 11+',data:kw11,backgroundColor:'#E5E5E5',borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:F,boxWidth:8,padding:10}}},scales:{x:{stacked:true,ticks:{font:F},grid:{display:false}},y:{stacked:true,ticks:{font:F},grid:{color:'rgba(0,0,0,0.05)'}}}}});
+  mk('chartKwLine',{type:'line',data:{labels:ahrefsM,datasets:[{label:'Top 3',data:kwTop3,borderColor:'#E52217',borderWidth:2,fill:false,tension:0.3,pointRadius:4,pointBackgroundColor:'#E52217'},{label:'Top 4-10',data:kw410,borderColor:'#5781FF',borderWidth:2,fill:false,tension:0.3,pointRadius:4,pointBackgroundColor:'#5781FF'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{font:F,boxWidth:8,padding:10}}},scales:{x:{ticks:{font:F},grid:{display:false}},y:{ticks:{font:F},grid:{color:'rgba(0,0,0,0.05)'}}}}});
+  document.getElementById('compTable').innerHTML=compRows.map(r=>`<tr style="${r.client?'background:#FFF7F7;font-weight:700;border-left:3px solid #E52217':''}border-bottom:1px solid #f0f0f0"><td style="padding:7px 12px">${r.d}${r.client?' <span style="background:#FFE7E6;color:#E52217;font-size:10px;padding:1px 6px;border-radius:3px;font-weight:700;margin-left:4px">Il tuo sito</span>':''}</td><td style="padding:7px 12px;text-align:right;${r.kc===650?'color:#E52217;font-weight:700':''}">${typeof r.kc==='number'?r.kc.toLocaleString('it'):r.kc}</td><td style="padding:7px 12px;text-align:right">${typeof r.kt==='number'?r.kt.toLocaleString('it'):r.kt}</td><td style="padding:7px 12px;text-align:right">${r.dr}</td><td style="padding:7px 12px;font-size:11px;color:#595959">${r.note}</td></tr>`).join('');
+}
+
+const tabBuilders={overview:buildOverviewCharts,brand:buildBrandCharts,pages:buildPageCharts,queries:buildQueryCharts,ahrefs:buildAhrefsCharts};
+const built={};
+
+function switchTab(id,el){
+  document.querySelectorAll('[id^="tab-"]').forEach(t=>t.style.display='none');
+  document.querySelectorAll('.nav-btn').forEach(b=>{b.style.color='#595959';b.style.borderBottom='2px solid transparent'});
+  document.getElementById('tab-'+id).style.display='block';
+  el.style.color='#E52217';el.style.borderBottom='2px solid #E52217';
+  if(!built[id]&&tabBuilders[id]){setTimeout(()=>{tabBuilders[id]();built[id]=true},80);}
+}
+
+window.addEventListener('load',()=>{setTimeout(()=>{buildOverviewCharts();built.overview=true;},150);});
+</script>
+</div>
